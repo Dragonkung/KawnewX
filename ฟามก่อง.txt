@@ -9,23 +9,28 @@ repeat wait() until game:IsLoaded() ~= false
 
 
 
-function Text(value)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Kawnew X Loading...", 
-        Text = tostring(value),
-        Icon = "http://www.roblox.com/asset/?id=9606070311",
-        Duration = 4
-    })
-end
-function Com()
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Kawnew X", 
-        Text = "Load succeed Farming money",
-        Icon = "http://www.roblox.com/asset/?id=9606070311",
-        Duration = 6
-    })
-end
-
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=9606070311";
+      Title = "Kawnew X loading..", 
+      Text = "กำลังโหลด"
+  })
+  
+  wait(5)
+  
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=9606070311";
+      Title = "Kawnew X", 
+      Text = "โหลดสำเร็จ"
+  })
+  
+  wait(1)
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=9606070311";
+      Title = "Kawnew X", 
+      Text = "ปรับสภาพเเวดล้อม"
+  })
+  
+  wait(5)
 
 
 local Counter = 0
