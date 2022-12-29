@@ -32,6 +32,14 @@ game.StarterGui:SetCore("SendNotification", {
   
   wait(5)
 
+wait(1)
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=9606070311";
+      Title = "Kawnew X", 
+      Text = "ฟาร์มกล่อง"
+  })
+
+
 
 local Counter = 0
 local PlaceID = game.PlaceId
@@ -151,3 +159,13 @@ end)
 
 
 end
+
+
+
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "http://www.roblox.com/asset/?id=9606070311";
+      Title = "Kawnew X loading..", 
+      Text = "กำลังโหลด"
+  })
+  
+  wait(100)
