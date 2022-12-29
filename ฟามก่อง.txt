@@ -160,12 +160,13 @@ end)
 
 end
 
+wait(50)
 
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=9606070311";
       Title = "Kawnew X loading..", 
-      Text = "กำลังโหลด"
+      Text = "กำลังทำงาน"
   })
   
-  wait(100)
+  wait(1)
