@@ -2,7 +2,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     game.StarterGui:SetCore("SendNotification", {
       Icon = "http://www.roblox.com/asset/?id=9606070311";
       Title = "Kwnew X ", 
-      Text = "Welcome Dragon hub!"
+      Text = "Welcome Kawnew hub!"
   })
   
   wait(1)
@@ -2206,6 +2206,10 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
       buy:AddButton("Dragon Talon",function()
       game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon",true)
       game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
+  end)
+      buy:AddButton("Godhuman",function()
+      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman",true)
+      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
   end)
   
   buy:AddLabel("Sword")
