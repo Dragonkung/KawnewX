@@ -1,0 +1,204 @@
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "Map: Brake in"
+  })
+  
+  wait(2)
+
+if game:GetService("CoreGui"):FindFirstChild("Kawnew X") then
+   game:GetService("CoreGui"):FindFirstChild("Kawnew X"):Destroy()
+end
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/kickTh/New-Ui/main/ABC_Ui.txt'))()
+
+local win = UILib:Window("Kawnew X | Brake in",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+local MainSection = win:Tab("Main")
+
+MainSection:Button("Get cola", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("BloxyCola")
+end)
+
+MainSection:Button("Get apple", function()
+    game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Apple")
+end)
+
+MainSection:Button("Get pizza", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Pizza2")
+end)
+
+MainSection:Button("Get cokie", function()
+    game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Cookie")
+end)
+
+MainSection:Button("Get madkit", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("MedKit")
+end)
+
+local xxx = win:Tab("role")
+xxx:Button("polit Role", function()
+    local A_1 = "Gun"
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+Event:FireServer(A_1, A_2)
+end) 
+xxx:Button("Swant Role", function()
+    local A_1 = "SwatGun"
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+Event:FireServer(A_1, A_2)
+end)
+
+local tp = win:Tab("TP")
+
+tp:Button("home", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36, 3, -200)
+end)
+
+tp:Button("Store", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422, 3, -121)
+end)
+
+tp:Button("basement", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71, -15, -163)
+end)
+
+tp:Button("bossroom", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, -287, -1480)
+end)
+
+MainSection:Dropdown("Dropdown 1", {"1","2","3"}, function(String)
+
+end)
+MainSection:Slider("Slider",0,100,16,true, function(State)
+    
+end)
+
+local Settings = win:Tab("Settings")
+Settings:Label("UI Toggle Key:  Right-Ctrl")
+Settings:Label("Credit : Kawnew")
+Settings:Label("Credit UI : NOOB HUB")
+Settings:Button("Copy Discord Invite", function()
+    setclipboard("coming soon")
+    UILib:Notification("Notification", "Copied!", "Okay")
+end)
+Settings:Button("Game link", function()
+   setclipboard("")
+   UILib:Notification("Notification", "Copied!", "Okay")
+end)
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X Warning", 
+      Text = "สคริป นี้ใช้ ui ของ noob hub "
+  })
+  
+  wait(1)
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X Warning", 
+      Text = "Scrip has use ui noob hub(Dev หา ui ที่ถูกใจไม่เจอ)"
+  })
+  
+  wait(4)
+
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "Map: Brake in"
+  })
+  
+  wait(2)
+
+if game:GetService("CoreGui"):FindFirstChild("Kawnew X") then
+   game:GetService("CoreGui"):FindFirstChild("Kawnew X"):Destroy()
+end
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/kickTh/New-Ui/main/ABC_Ui.txt'))()
+
+local win = UILib:Window("Kawnew X | Brake in",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+local MainSection = win:Tab("Main")
+
+MainSection:Button("Get cola", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("BloxyCola")
+end)
+
+MainSection:Button("Get apple", function()
+    game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Apple")
+end)
+
+MainSection:Button("Get pizza", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Pizza2")
+end)
+
+MainSection:Button("Get cokie", function()
+    game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Cookie")
+end)
+
+MainSection:Button("Get madkit", function()
+game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("MedKit")
+end)
+
+local xxx = win:Tab("role")
+xxx:Button("polit Role", function()
+    local A_1 = "Gun"
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+Event:FireServer(A_1, A_2)
+end) 
+xxx:Button("Swant Role", function()
+    local A_1 = "SwatGun"
+local A_2 = true
+local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+Event:FireServer(A_1, A_2)
+end)
+
+local tp = win:Tab("TP")
+
+tp:Button("home", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36, 3, -200)
+end)
+
+tp:Button("Store", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422, 3, -121)
+end)
+
+tp:Button("basement", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71, -15, -163)
+end)
+
+tp:Button("bossroom", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, -287, -1480)
+end)
+
+MainSection:Dropdown("Dropdown 1", {"1","2","3"}, function(String)
+
+end)
+MainSection:Slider("Slider",0,100,16,true, function(State)
+    
+end)
+
+local Settings = win:Tab("Settings")
+Settings:Label("UI Toggle Key:  Right-Ctrl")
+Settings:Label("Credit : Kawnew")
+Settings:Label("Credit UI : NOOB HUB")
+Settings:Button("Copy Discord Invite", function()
+    setclipboard("coming soon")
+    UILib:Notification("Notification", "Copied!", "Okay")
+end)
+Settings:Button("Game link", function()
+   setclipboard("")
+   UILib:Notification("Notification", "Copied!", "Okay")
+end)
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X Warning", 
+      Text = "สคริป นี้ใช้ ui ของ noob hub "
+  })
+  
+  wait(1)
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X Warning", 
+      Text = "Scrip has use ui noob hub(Dev หา ui ที่ถูกใจไม่เจอ)"
+  })
+  
+  wait(4)
+
