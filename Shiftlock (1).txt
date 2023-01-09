@@ -5,9 +5,9 @@
 
 game.StarterGui:SetCore("SendNotification", {
 
-    Title = "Shiftlock Script";
+    Title = "Kawnew X";
 
-    Text = "discord.gg/arceus || lixbo";
+    Text = "Ship lock scrip";
 
 })
 
@@ -233,3 +233,4 @@ local function OMQRQRC_fake_script() -- ShiftlockStarterGui.LocalScript
 	
 end
 coroutine.wrap(OMQRQRC_fake_script)()
+setclipboard("Kawnew X Discord : comming soon")
