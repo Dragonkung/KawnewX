@@ -5970,6 +5970,10 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     Shop:AddButton("Buy Dragon Talon",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
     end)
+      Shop:AddButton("Buy God human",function()
+      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman",true)
+      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
+  end)
     -----Shop----------------
     Shop:AddSeperator("Accessory")
     
