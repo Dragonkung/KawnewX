@@ -16,6 +16,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/ma
   
   wait(4)
 -----------------
-setclipboard("https://discord.gg/????")
+setclipboard("https://discord.gg/comming soon")
 -----------------
  
