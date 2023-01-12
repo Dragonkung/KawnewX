@@ -14,4 +14,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/ma
       Text = "Loading succeed"
   })
   
+  wait(4)
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "กำลังคัดลอก"
+  })
+  
   wait(2)
+setclipboard("https://discord.gg/????")
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "คัดลอกสำเร็จ"
+  })
+  
+  wait(2)
+
