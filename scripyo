@@ -1,21 +1,13 @@
- game.StarterGui:SetCore("SendNotification", {
-      Icon = "";
-      Title = "Kawnew X 3.0", 
-      Text = "Loading Scrip"
-  })
-  
-  wait(1)
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/bloxfruit.txt'))()
 
- game.StarterGui:SetCore("SendNotification", {
-      Icon = "";
-      Title = "Kawnew X 3.0", 
-      Text = "Loading succeed"
-  })
-  
-  wait(4)
 -----------------
 setclipboard("https://discord.gg/comming soon")
 -----------------
- 
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "No Key Need"
+  })
+  
+  wait(1)
