@@ -24,3 +24,11 @@ game.StarterGui:SetCore("SendNotification", {
         root.CFrame = root.CFrame+offset
         end)
         tool.Parent = plr.Backpack
+
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "จะไม่มี Fast attk เนื่องจากคนส่วนมากใช้ Fluxus"
+  })
+  
+  wait(2)
