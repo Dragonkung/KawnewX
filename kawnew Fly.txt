@@ -27,7 +27,7 @@ up.Parent = Frame
 up.BackgroundColor3 = Color3.fromRGB(79, 255, 152)
 up.Size = UDim2.new(0, 44, 0, 28)
 up.Font = Enum.Font.SourceSans
-up.Text = "UP"
+up.Text = "ขึ้น"
 up.TextColor3 = Color3.fromRGB(0, 0, 0)
 up.TextSize = 14.000 
 
@@ -37,7 +37,7 @@ down.BackgroundColor3 = Color3.fromRGB(215, 255, 121)
 down.Position = UDim2.new(0, 0, 0.491228074, 0)
 down.Size = UDim2.new(0, 44, 0, 28)
 down.Font = Enum.Font.SourceSans
-down.Text = "DOWN"
+down.Text = "ลง"
 down.TextColor3 = Color3.fromRGB(0, 0, 0)
 down.TextSize = 14.000 
 
@@ -47,7 +47,7 @@ onof.BackgroundColor3 = Color3.fromRGB(255, 249, 74)
 onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
 onof.Size = UDim2.new(0, 56, 0, 28)
 onof.Font = Enum.Font.SourceSans
-onof.Text = "fly"
+onof.Text = "บิน"
 onof.TextColor3 = Color3.fromRGB(0, 0, 0)
 onof.TextSize = 14.000 
 
@@ -137,7 +137,7 @@ nowe = false
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 Title = "Fly By kawnew X";
-Text = "ข้าวเหนียว(KawnewX)";
+Text = "KawnewX";
 Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5; 
 
@@ -472,3 +472,30 @@ mini2.Visible = false
 main.Frame.BackgroundTransparency = 0 
 closebutton.Position = UDim2.new(0, 0, -1, 27)
 end)
+
+setclipboard("Kawnew X hub N.O.1")
+
+  local plr = game:GetService("Players").LocalPlayer
+        local mouse = plr:GetMouse()
+        local tool = Instance.new("Tool")
+        tool.RequiresHandle = false
+        tool.Name = "???"
+        tool.Activated:Connect(function()
+        local root = plr.Character.HumanoidRootPart
+        local pos = mouse.Hit.Position+Vector3.new(0,2.5,0)
+        local offset = pos-root.Position
+        root.CFrame = root.CFrame+offset
+        end)
+        tool.Parent = plr.Backpack
+
+local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
