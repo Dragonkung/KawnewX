@@ -1,0 +1,10 @@
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "3in1"
+  })
+  
+  wait(2)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/kawnew%20Fly.txt'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/noclip'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Shiftlock%20(1).txt'))()
