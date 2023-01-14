@@ -52,12 +52,12 @@ onof.TextColor3 = Color3.fromRGB(0, 0, 0)
 onof.TextSize = 14.000 
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 300, 255)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "KawnewX"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextColor3 = Color3.fromRGB(1, 1, 1)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true 
@@ -66,12 +66,12 @@ plus.Name = "plus"
 plus.Parent = Frame
 plus.BackgroundColor3 = Color3.fromRGB(133, 145, 255)
 plus.Position = UDim2.new(0.231578946, 0, 0, 0)
-plus.Size = UDim2.new(0, 45, 0, 28)
+plus.Size = UDim2.new(0, 55, 0, 28)
 plus.Font = Enum.Font.SourceSans
-plus.Text = "+"
+plus.Text = "เพิ่ม"
 plus.TextColor3 = Color3.fromRGB(0, 0, 0)
 plus.TextScaled = true
-plus.TextSize = 14.000
+plus.TextSize = 15.000
 plus.TextWrapped = true 
 
 speed.Name = "speed"
@@ -90,12 +90,12 @@ mine.Name = "mine"
 mine.Parent = Frame
 mine.BackgroundColor3 = Color3.fromRGB(123, 255, 247)
 mine.Position = UDim2.new(0.231578946, 0, 0.491228074, 0)
-mine.Size = UDim2.new(0, 45, 0, 29)
+mine.Size = UDim2.new(0, 55, 0, 29)
 mine.Font = Enum.Font.SourceSans
-mine.Text = "-"
+mine.Text = "ลด"
 mine.TextColor3 = Color3.fromRGB(0, 0, 0)
 mine.TextScaled = true
-mine.TextSize = 14.000
+mine.TextSize = 15.000
 mine.TextWrapped = true 
 
 closebutton.Name = "Close"
@@ -103,7 +103,7 @@ closebutton.Parent = main.Frame
 closebutton.BackgroundColor3 = Color3.fromRGB(225, 25, 0)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 28)
-closebutton.Text = "X"
+closebutton.Text = "ปิด"
 closebutton.TextSize = 30
 closebutton.Position = UDim2.new(0, 0, -1, 27) 
 
@@ -112,7 +112,7 @@ mini.Parent = main.Frame
 mini.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
 mini.Font = "SourceSans"
 mini.Size = UDim2.new(0, 45, 0, 28)
-mini.Text = "-"
+mini.Text = "ย่อ"
 mini.TextSize = 40
 mini.Position = UDim2.new(0, 44, -1, 27) 
 
@@ -121,7 +121,7 @@ mini2.Parent = main.Frame
 mini2.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
 mini2.Font = "SourceSans"
 mini2.Size = UDim2.new(0, 45, 0, 28)
-mini2.Text = "+"
+mini2.Text = "ขยาย"
 mini2.TextSize = 40
 mini2.Position = UDim2.new(0, 44, -1, 57)
 mini2.Visible = false 
@@ -473,7 +473,7 @@ main.Frame.BackgroundTransparency = 0
 closebutton.Position = UDim2.new(0, 0, -1, 27)
 end)
 
-setclipboard("Kawnew X hub N.O.1")
+setclipboard("สคริปKawnew X hub ที่1)
 
   local plr = game:GetService("Players").LocalPlayer
         local mouse = plr:GetMouse()
@@ -488,14 +488,3 @@ setclipboard("Kawnew X hub N.O.1")
         end)
         tool.Parent = plr.Backpack
 
-local Light = game:GetService("Lighting")
-
-function dofullbright()
-Light.Ambient = Color3.new(1, 1, 1)
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
-Light.ColorShift_Top = Color3.new(1, 1, 1)
-end
-
-dofullbright()
-
-Light.LightingChanged:Connect(dofullbright)
