@@ -1344,6 +1344,35 @@ game.StarterGui:SetCore("SendNotification", {
   })
   
   wait(0.1)
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X spam", 
+      Text = "เเสปมกังๆ เเต่ตึงๆ"
+  })
+  
+  wait(0.1)
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X spam", 
+      Text = "เเสปมกังๆ เเต่ตึงๆ"
+  })
+  
+  wait(0.1)
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X spam", 
+      Text = "เเสปมกังๆ เเต่ตึงๆ"
+  })
+  
+  wait(0.1)
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X spam", 
+      Text = "เเสปมกังๆ เเต่ตึงๆ"
+  })
+  
+  wait(0.1)
 
 --เซ็ตของ
-setclipboard("สแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆสแปมกังๆเเต่ตึงๆ")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/KawnewX/main/set"))()
