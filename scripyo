@@ -1,5 +1,5 @@
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/bloxfruit.txt'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Kawnew%20Xbug%20fix.txt'))()
 
 -----------------
 setclipboard("https://discord.gg/comming soon")
