@@ -1,0 +1,14 @@
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "Waiting....."
+  })
+  
+  wait(10)
+ game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "Kawnew X", 
+      Text = "ไปยังที่ลงดันเเล้วคำตอบจะอยู่ที่นั้น"
+  })
+  
+  wait(2)
