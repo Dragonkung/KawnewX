@@ -2101,6 +2101,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034509993")
     local Esp = RenUi:AddTab("ESP","6034509993")
+    local hi = RenUi:AddTab("???","")
     --------------------------------------------------------------------
     local webhookcheck =
     is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Arceus X" or
