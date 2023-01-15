@@ -11576,11 +11576,13 @@ elseif game.PlaceId == 6329844902 then
     Misc:AddToggle("Fly",false,function(value)
         Fly = value
     end)
-    
+
+    hee:AddSeperator("...")
+
 hee:AddButton("คำใบ้",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/%E0%B8%A5%E0%B8%B1%E0%B8%9A'))()
   end)
-hee:AddTextbox("ใส่คำใบ้", "1234", true, function()
+hee:AddTextbox("ใส่คำตอบ", "1234", true, function()
       setclipboard("Hite")
      end)
 
