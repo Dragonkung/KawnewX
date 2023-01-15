@@ -11577,6 +11577,10 @@ elseif game.PlaceId == 6329844902 then
         Fly = value
     end)
     
+hi:AddButton("คำใบ้",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/%E0%B8%A5%E0%B8%B1%E0%B8%9A'))()
+    end)
+
     spawn(function()
         while wait() do
             pcall(function()
