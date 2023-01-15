@@ -1984,7 +1984,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         if Distance < 250 then
             Speed = 600
         elseif Distance >= 1000 then
-            Speed = 500
+            Speed = 900
         end
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
@@ -10818,7 +10818,7 @@ elseif game.PlaceId == 6329844902 then
     
     FarmMethod = CFrame.new(0,1,2.5)
     --
-    local RenUi = library:AddWindow("Euphoria | 1981",Enum.KeyCode.RightControl)
+    local RenUi = library:AddWindow("Kawnew X | 3.0",Enum.KeyCode.RightControl)
     --
     local Main = RenUi:AddTab("Auto Farm","6026568198")
     local Stats = RenUi:AddTab("Stats","7040410130")
