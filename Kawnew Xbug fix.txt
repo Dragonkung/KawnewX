@@ -2101,7 +2101,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034509993")
     local Esp = RenUi:AddTab("ESP","6034509993")
-    local hi = RenUi:AddTab("???","")
+    local hee = RenUi:AddTab("???","")
     --------------------------------------------------------------------
     local webhookcheck =
     is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Arceus X" or
@@ -11577,10 +11577,10 @@ elseif game.PlaceId == 6329844902 then
         Fly = value
     end)
     
-hi:AddButton("คำใบ้",function()
+hee:AddButton("คำใบ้",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/%E0%B8%A5%E0%B8%B1%E0%B8%9A'))()
   end)
-hi:AddTextbox("ใส่คำใบ้", "1234", true, function()
+hee:AddTextbox("ใส่คำใบ้", "1234", true, function()
       setclipboard("Hite")
      end)
 
