@@ -2100,6 +2100,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     local DevilFruit = RenUi:AddTab("Devil Fruit","7044233235")
     local Shop = RenUi:AddTab("Shop","6031265976")
     local Misc = RenUi:AddTab("Misc","6034509993")
+    local Abc = RenUi:AddTab("Esp","6034509993")
     --------------------------------------------------------------------
     local webhookcheck =
     is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Arceus X" or
@@ -5531,7 +5532,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         end)
     end)
     
-    Dungeon:AddToggle("Auto Farm Dungeon,K",_G.Auto_Dungeon,function(value)
+    Dungeon:AddToggle("Auto Farm Dungeon",_G.Auto_Dungeon,function(value)
         _G.Auto_Dungeon = value
         StopTween(_G.Auto_Dungeon)
     end)
@@ -6421,37 +6422,37 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         setfpscap(100)
     end)
     
-    Misc:AddSeperator("ESP")
+    Abc:AddSeperator("ESP")
     
-    Misc:AddToggle("ESP Player",false,function(value)
+    Abc:AddToggle("ESP Player",false,function(value)
         ESPPlayer = value
         while ESPPlayer do wait()
             UpdateEspPlayer()
         end
     end)
     
-    Misc:AddToggle("ESP Chest",false,function(value)
+    Abc:AddToggle("ESP Chest",false,function(value)
         ChestESP = value
         while ChestESP do wait()
             UpdateChestEsp() 
         end
     end)
     
-    Misc:AddToggle("ESP Fruit",false,function(value)
+    Abc:AddToggle("ESP Fruit",false,function(value)
         DevilFruitESP = value
         while DevilFruitESP do wait()
             UpdateBfEsp() 
         end
     end)
     
-    Misc:AddToggle("ESP Flower",false,function(value)
+    Abc:AddToggle("ESP Flower",false,function(value)
         FlowerESP = value
         while FlowerESP do wait()
             UpdateFlowerEsp() 
         end
     end)
     
-    Misc:AddToggle("ESP Island",IslandESP,function(value)
+    Abc:AddToggle("ESP Island",IslandESP,function(value)
         IslandESP = value
         while IslandESP do wait()
             UpdateIslandESP() 
