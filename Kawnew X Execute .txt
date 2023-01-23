@@ -261,7 +261,7 @@ execute.MouseButton1Click:Connect(function()
         loadstring(Source.Text)()
     end
     if injected == false then
-        title.Text = "Excute (not injected! press attach)"
+        title.Text = "Excute (บัคคค ให้กดเเด้ไขบัค)"
     end
 end)
 
@@ -303,13 +303,13 @@ Attach.BorderSizePixel = 0
 Attach.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
 Attach.Size = UDim2.new(0, 84, 0, 30)
 Attach.Font = Enum.Font.Arial
-Attach.Text = "Attach"
+Attach.Text = "เเก้ไขบัค"
 Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
 Attach.TextSize = 14.000
 Attach.MouseButton1Click:Connect(function()
     print("hi")
     if injected == true then
-        title.Text = "Kawnew X (already injected!)"
+        title.Text = "Kawnew X (ไม่มีบัค)"
         wait(1)
         title.Text = "Kawnew X"
     end
@@ -324,7 +324,7 @@ Attach.MouseButton1Click:Connect(function()
         wait(0.3)
         title.Text = "Kawnew X (ready!)"
         wait(0.5)
-        title.Text = "Kawnew X"
+        title.Text = ""
         injected = true
     end
 end)
@@ -336,7 +336,7 @@ title_2.BackgroundTransparency = 1.000
 title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
 title_2.Size = UDim2.new(0, 18, 0, 24)
 title_2.ZIndex = 14
-title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
+title_2.Image = ""
 title_2.ImageRectSize = Vector2.new(138, 167)
 
 scripthub_2.Name = "scripthub"
