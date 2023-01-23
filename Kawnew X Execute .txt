@@ -498,6 +498,9 @@ execute_2.MouseButton1Click:Connect(function()
         if scriptselected == "esp" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
         end
+        if scriptselected == "kwx" then
+            setclipboard("Comming soon")
+        end
         if scriptselected == "none" then
         end
     end
@@ -532,7 +535,7 @@ title_4.BackgroundTransparency = 1.000
 title_4.Position = UDim2.new(0.00870821718, 0, 0, 0)
 title_4.Size = UDim2.new(0, 18, 0, 24)
 title_4.ZIndex = 110
-title_4.Image = "http://www.roblox.com/asset/?id=7641125882"
+title_4.Image = ""
 title_4.ImageRectSize = Vector2.new(138, 167)
 
 -- Scripts:
@@ -799,16 +802,19 @@ while true do
             descri.Text = ""
         end
         if scriptselected == "dex" then
-            descri.Text = "A version of the popular Dex explorer with patches specifically for Synapse X Remake."
+            descri.Text = "A version of the popular Dex explorer with patches specifically for Kawnew"
         end
         if scriptselected == "esp" then
-            descri.Text = "ESP Made by ic3w0lf using the Drawing API."
+            descri.Text = "ESP Made by Edoktong using the Drawing API."
         end
         if scriptselected == "spy" then
             descri.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
         end
+        if scriptselected == "kwx" then
+            descri.Text = "ตึง ไม่เเล็ค เสถียร ไม่ต้อง Get Key (ถ้าปิงก็ไม่เสถียรอะบินตกน้ำ)"
+        end
         if scriptselected == "dumper" then
-            descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
+            descri.Text = "Dumps the place as a ??? file in your workspace folder. (IDK)"
         end
     end
 end
