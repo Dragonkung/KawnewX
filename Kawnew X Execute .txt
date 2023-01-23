@@ -418,6 +418,24 @@ spy.MouseButton1Click:Connect(function()
     scriptselected = "spy"
 end)
 
+kwx.Name = "kwx"
+kwx.Parent = select
+kwx.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+kwx.BackgroundTransparency = 1.000
+kwx.BorderColor3 = Color3.fromRGB(0, 0, 49)
+kwx.BorderSizePixel = 0
+kwx.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
+kwx.Size = UDim2.new(0, 80, 0, 18)
+kwx.Font = Enum.Font.SourceSans
+kwx.Text = " Remote Spy"
+kwx.TextColor3 = Color3.fromRGB(255, 255, 255)
+kwx.TextSize = 14.000
+kwx.TextXAlignment = Enum.TextXAlignment.Left
+kwx.ZIndex = 110
+kwx.MouseButton1Click:Connect(function()
+    scriptselected = "kwx"
+end)
+
 dumper.Name = "dumper"
 dumper.Parent = select
 dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
