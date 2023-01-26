@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/KawnewX/Scrip(obf%2Cnoobf)/Cr"))()
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Kawnew%20Xbug%20fix.txt'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Kawnew%20Xbug%20fix2.txt'))()
 
 -----------------
 setclipboard("https://discord.gg/comming soon")
