@@ -1,0 +1,9 @@
+local gamelist = {
+    [994732206] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Konduri", --Bf
+    [504035427] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Spam", --zombie
+    [1318971886] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Brake%20in" --breakin
+}
+local check =  gamelist[game.PlaceId]
+if check then 
+loadstring(game:HttpGet(check))()
+end
