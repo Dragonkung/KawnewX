@@ -11520,4 +11520,4 @@ end
 
 
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=White> Welcom To Kawnew X Hub!!  <Color=/>"):Display()
+Notification.new("<Color=White>Welcome To K_Now 3.0!!  <Color=/>"):Display()
