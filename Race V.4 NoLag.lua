@@ -1017,8 +1017,9 @@ local ScreenGui = Instance.new("ScreenGui")
     
     local Main = SOMEXHUB:AddTab("วาร์ปไปที่ทำเผ่า","6026568198")
     local tx = SOMEXHUB:AddTab("ผ่านด่านทำเผ่า","7251993295")
-    
-    Main:AddSeperator("Main1")
+    local d = SOMEXHUB:AddTab("วาร์ป","6026568198")
+    local x = SOMEXHUB:AddTab("อื่นๆ","6026568198")
+    Main:AddSeperator("วาร์ป")
     
     Time = Main:AddLabel("Server Time")
     
@@ -1114,6 +1115,10 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalP
 end)
     
 
+   d:AddButton("Mansion",function()
+    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+    end)
+
     
     Weapon = {}
     
@@ -1123,11 +1128,11 @@ end)
         end
     end
     
-    local SelectWeapona = Main:AddDropdown("Select Weapon",Weapon,function(value)
+    local SelectWeapona = x:AddDropdown("Select Weapon",Weapon,function(value)
         _G.SelectWeapon = value
     end)
     
-    Main:AddButton("Refresh Weapon",function()
+    x:AddButton("Refresh Weapon",function()
         SelectWeapona:Clear()
         for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do  
             SelectWeapona:Add(v.Name)
@@ -1135,12 +1140,12 @@ end)
     end)
     
     
-     Main:AddTextbox("Textbox", "?", true, function(Value)
+    x:AddTextbox("Textbox", "Coming soon", true, function(Value)
      end)
 
     
     _G.Main = 1
-    Main:AddSlider("Select Main",1,100,1,function(value)
+    x:AddSlider("Select Main",1,100,1,function(value)
         _G.Main = value
     end)
     
