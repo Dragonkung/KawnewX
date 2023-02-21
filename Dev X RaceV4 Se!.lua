@@ -1078,9 +1078,11 @@
         _G.AddToggle = value
     end)
 
-        
+        Main:AddButton("เซพจุดเกิด",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+end)
     Main:AddButton("ไปที่ Temple of time",function()
-      TP(CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875))
+      Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
     end)
        Main:AddButton("ไปที่ คันโยก(ต้องอยู่ใน Temple)",function()
  Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28575.181640625, 14936.6279296875, 72.31636810302734)
@@ -1103,7 +1105,7 @@ Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28672.720703125, 14889.1279296875, 454.5961608886719)
     end)
                Main:AddButton("ไปที่ ประตูเผ่ามนุษย์(ต้องอยู่ใน Temple)",function()
-Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938)
+TP(CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938))--ฮูมาดอเเก้บัคคะน้อง
     end)
             Main:AddButton("ไปที่ ประตูเผ่าสกาย(ต้องอยู่ใน Temple)",function()
 Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28967.408203125, 14918.0751953125, 234.31198120117188)
@@ -1151,9 +1153,12 @@ end)
      game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
     end)
      n:AddButton("Npc Temple of time",function()
- Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2947.556884765625, 2281.630615234375, -7213.54931640625)
+TP(CFrame.new(2947.556884765625, 2281.630615234375, -7213.54931640625))
+end)
+     n:AddButton("เกาะเค้ก,function()
+TP(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
     end)
-    
+
       rn:AddSeperator("Misc")
     Weapon = {}
     
