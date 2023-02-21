@@ -1078,9 +1078,7 @@
         _G.AddToggle = value
     end)
 
-        Main:AddButton("เซพจุดเกิด",function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
-end)
+        
     Main:AddButton("ไปที่ Temple of time",function()
       Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
     end)
