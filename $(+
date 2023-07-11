@@ -1,0 +1,30 @@
+--[[
+This 3Game Is K_Now Sppportนอกนั้นพัง!!
+]]
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "K_Now X Notification", 
+      Text = "Chacking..."
+  })
+  
+  
+local gameLinks = {
+    [3260590327] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Cokm.lua",
+    [12400504665] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Cokm.lua",
+    [662417684] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Cokm.lua",
+    [10704789056] = "https://raw.githubusercontent.com/5Picklebarry/Scripts/main/Pickle-Hub/Drive-World.lua",
+    [9872472334] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Evade%20X%20hub.txt",
+    [3851622790] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Brake%20in",
+}
+
+if gameLinks[game.PlaceId] ~= nil then
+    loadstring(game:HttpGet(gameLinks[game.PlaceId]))()
+else
+    game.StarterGui:SetCore("SendNotification", {
+      Icon = "";
+      Title = "K_Now X Report", 
+      Text = "Game Not Support🥲"
+  })
+  
+  wait(2)
+end
