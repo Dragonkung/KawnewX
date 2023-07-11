@@ -15,6 +15,8 @@ local gameLinks = {
     [10704789056] = "https://raw.githubusercontent.com/5Picklebarry/Scripts/main/Pickle-Hub/Drive-World.lua",
     [9872472334] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Evade%20X%20hub.txt",
     [3851622790] = "https://raw.githubusercontent.com/Dragonkung/KawnewX/main/Brake%20in",
+    [2753915549] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Cokm.lua",
+    [7449423635] = "https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/Cokm.lua",
 }
 
 if gameLinks[game.PlaceId] ~= nil then
