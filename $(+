@@ -1,6 +1,4 @@
---[[
-This 3Game Is K_Now Sppportนอกนั้นพัง!!
-]]
+
 game.StarterGui:SetCore("SendNotification", {
       Icon = "";
       Title = "K_Now X Notification", 
