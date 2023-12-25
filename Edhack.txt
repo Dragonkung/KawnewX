@@ -2533,7 +2533,7 @@ spawn(function()
 end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "K_Now Hub", HidePremium = false, IntroText = "EdwardNewgateHub Library", SaveConfig = true, ConfigFolder = "Edward Newgate Hub"})
+local Window = OrionLib:MakeWindow({Name = "K_Now Hub", HidePremium = false, IntroText = "K_Now Load!", SaveConfig = true, ConfigFolder = "Edward Newgate Hub"})
 
 OrionLib:MakeNotification({
 	Name = "K_Now Hub",
