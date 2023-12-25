@@ -5,7 +5,7 @@ elseif game.PlaceId == 4442272183 then
 elseif game.PlaceId == 7449423635 then
     World3 = true
 else
-    game:GetService("Players").LocalPlayer:Kick("Do not Support, Please wait...")
+    game:GetService("Players").LocalPlayer:Kick("Do not Support\nBloxFruit Only")
 end
 
 function CheckQuest() 
@@ -2648,6 +2648,8 @@ local Section = W:AddSection({
 W:AddLabel("[+] K_Now Hub (Beta)")
 W:AddLabel("[+] Code By K_Now")
 W:AddLabel("[+] Load Script Faster")
+W:AddLabel("[*] Boost FPS (Maximum 20++)")
+W:AddLabel("[-] Delete Boost FPS(old version)")
 
 local Section = W:AddSection({
     Name = "Status"
@@ -3335,10 +3337,10 @@ local Section = M:AddSection({
     Name = "Kaitun Met Vaiz"
 })
 
-M:AddParagraph("Kaitun/Cantay","Kaitun bản này đell khác gì bản kia.")
+M:AddParagraph("Kaitun/Cantay","Kick 70%")
 
 M:AddToggle({
-    Name = "Kaitun[Ko có kill players]",
+    Name = "Kaitun[kill players]",
     Default = false,
     Flag = "Kaitun",
     Save = true,
@@ -4125,7 +4127,7 @@ IQ:AddToggle({
             Name = "ArenaTrainer"
         })
 
-        IQ:AddLabel("Cho thằng nào đell hiểu thì đây là tự động đánh hình nộm")
+        IQ:AddLabel("//EMSA\\")
 
         IQ:AddToggle({
             Name = "Automatically hit the dummy",
@@ -11376,3 +11378,31 @@ OrionLib:MakeNotification({
     Content = "Loading Config Complete!!",
     Time = 5
 })
+
+
+--FPS BOOST
+_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true -- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = false -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = false, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = true, -- Destroy Images
+    },
+    ["No Particles"] = false, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+    ["No Camera Effects"] = false, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Explosions"] = false, -- Makes Explosion's invisible
+    ["No Clothes"] = false, -- Removes Clothing from the game
+    ["Low Water Graphics"] = true, -- Removes Water Quality
+    ["No Shadows"] = true, -- Remove Shadows
+    ["Low Rendering"] = true, -- Lower Rendering
+    ["Low Quality Parts"] = false -- Lower quality parts
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/FPSBooster.lua"))()
+print("Boost Load!!")
