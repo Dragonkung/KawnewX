@@ -11330,7 +11330,7 @@ spawn(function()
     end)
 
 OrionLib:MakeNotification({
-        Name = "Edward Newgate Hub",
+        Name = "K_Now Hub",
         Content = "Loading script complete!, You can now enable the function!",
         Time = 5
     })
@@ -11372,7 +11372,7 @@ end)
 OrionLib:Init()
 
 OrionLib:MakeNotification({
-    Name = "Edward Newgate Hub",
+    Name = "K_Now Hub",
     Content = "Loading Config Complete!!",
     Time = 5
 })
