@@ -2370,43 +2370,44 @@ local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
 
     HttpService = game:GetService("HttpService")
-    local i = "Edward Newgate Hub"
+    HttpService = game:GetService("HttpService")
+local i = "KNXBF"
+local j = "-BloxFruit.json"
+local l = game.Players.LocalPlayer.Name .. j
+if Adel then
+    HttpService = game:GetService("HttpService")
+    local i = "KNXBF"
     local j = "-BloxFruit.json"
     local l = game.Players.LocalPlayer.Name .. j
-    if Adel then
-        HttpService = game:GetService("HttpService")
-        local i = "Edward Newgate Hub"
-        local j = "-BloxFruit.json"
-        local l = game.Players.LocalPlayer.Name .. j
+end
+function SaveSettings(m, n)
+    if m ~= nil then
+        h[m] = n
     end
-    function SaveSettings(m, n)
-        if m ~= nil then
-            h[m] = n
-        end
-        HttpService = game:GetService("HttpService")
-        if not isfolder(i) then
-            makefolder(i)
-        end
-        writefile(i .. "/" .. l, HttpService:JSONEncode(h))
+    HttpService = game:GetService("HttpService")
+    if not isfolder(i) then
+        makefolder(i)
     end
-    function ReadSetting()
-        local s, o =
-            pcall(
-            function()
-                HttpService = game:GetService("HttpService")
-                if not isfolder(i) then
-                    makefolder(i)
-                end
-                return HttpService:JSONDecode(readfile(i .. "/" .. l))
+    writefile(i .. "/" .. l, HttpService:JSONEncode(h))
+end
+function ReadSetting()
+    local s, o =
+        pcall(
+        function()
+            HttpService = game:GetService("HttpService")
+            if not isfolder(i) then
+                makefolder(i)
             end
-        )
-        if s then
-            return o
-        else
-            SaveSettings()
-            return ReadSetting()
+            return HttpService:JSONDecode(readfile(i .. "/" .. l))
         end
+    )
+    if s then
+        return o
+    else
+        SaveSettings()
+        return ReadSetting()
     end
+end
 
     function MoonTextureId()
         if Sea1 then
