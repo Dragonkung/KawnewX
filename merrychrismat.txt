@@ -3205,7 +3205,7 @@ end)
 
 print("Load Script")
 
-local Library = Update:Window("           Domadic","12523036534",Enum.KeyCode.RightControl);
+local Library = Update:Window("           K_Now","12523036534",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
@@ -3222,19 +3222,8 @@ local Misc = Library:AddTab("Misc","11156061121")
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
 H:AddLabel("Script PC/Mobile")
-H:AddLabel("Wellcone To Script Domadic Hub")
+H:AddLabel("Wellcone To Script K_Now Hubb")
 
-H:AddSeperator("Credit")
-
-
-
-H:AddButton("Copy Link Donate",function()
-setclipboard("https://direct-link.net/547536/donate-domadic-hub")
-end)
-
-H:AddButton("Copy Youtube Domadic Hub",function()
-setclipboard("https://youtube.com/@nomadicoof789")
-end)
 
 H:AddLine()
 
@@ -3242,98 +3231,8 @@ H:AddLine()
 H:AddSeperator("UpdLog")
 
 
-H:AddLabel("[+] Reduce Tween Speed | 5/4/2566|10:02")
-H:AddLabel("[+] Added Super Fast Attack | 8/4/2566|00:30")
-H:AddLabel("[+] Added Anti Afk | 8/4/2566|00:30")
-H:AddLabel("[+] New Ui | 20/4/2566|19:40")
-H:AddLabel("[+] Reduce Cpu | 20/4/2566|22:39")
-H:AddLabel("[+] Added Auto Click | 22/4/2566|12:16")
-H:AddLabel("[+] Fixed Bug Attack| 26/4/2566|19:45")
-H:AddLabel("[+] Auto Farm Nearest | 27/4/2566|09:52")
-H:AddLabel("[+] Anti Ban | 30/4/2566|11:35")
-H:AddLabel("[+] Fix Auto Farm| 30/4/2566|11:35")
-H:AddLabel("[+] New Ui| 30/4/2566|19:37")
-H:AddLabel("[+] Fix Auto Chest Can't Use| 30/4/2566|23:10")
-H:AddLabel("[+] Added Auto Cavander| 30/4/2566|23:12")
-H:AddLabel("[+] Added Auto Twin Hook| 30/4/2566|23:13")
-H:AddLabel("[+] Added Elite Spawan Check| 30/4/2566|23:12")
-H:AddLabel("[+] Added unlock Buso| 2/5/2566|19:25")
-H:AddLabel("[+] Added unlock Soru| 2/5/2566|19:25")
-H:AddLabel("[+] Added unlock Geppo| 2/5/2566|19:25")
-H:AddLabel("[+] Added Auto Buy All Abilities 2/5/2566|1:19")
-H:AddLabel("[+] Added Auto Buy All Sword 2/5/2566|1:20")
-H:AddLabel("[+] Fixed Kill Aura|11/5/2566|14:53")
-H:AddLabel("[+] Fixed Tween To Fruit|15/5/2566|15:59")
-H:AddLabel("[+] Fixed Auto Farm Nearest|27/5/2566|8:59")
-H:AddLabel("[+] Added Mangnet Auto farm Nearest|27/5/2566|8:59")
-H:AddLabel("[+] More Upd|31/5/2566|18:48")
-H:AddLabel("[+] New Ui|31/5/2566|18:48")
-H:AddLabel("[+] Tp Gear|31/5/2566|18:48")
-H:AddLabel("[+] Npc Teleport|31/5/2566|18:48")
-H:AddLabel("[+] Esp Npc|31/5/2566|18:48")
-H:AddLabel("[+] Race V4 Selection|31/5/2566|21:54")
-H:AddLabel("[+] Auto Farm Materials |7/6/2566|07:54")
-H:AddLabel("[+] Auto Farm SeaBeast |9/6/2566|20:53")
-H:AddLabel("[+] Fixes Auto Farm Bosses Not Working|11/6/2566|21:30")
-H:AddLabel("[+] Added Auto Farm Mob|12/6/2566|08:30")
-H:AddLabel("[+] Fixed Gui Cannot Be Closed|19/6/2566|18:23")
-H:AddLabel("[+] New Ui|23/6/2566|18:46")
-H:AddLabel("[+] Added Auto Use Awakening|30/6/2566|09:47")
-H:AddLabel("[+] Added Auto Raid Pirate|30/6/2566|10:01")
-H:AddLabel("[+] Added Menu Setting Farm Mode|30/6/2566|14:39")
-H:AddLabel("[+] Added Job Id|5/7/2566|20:19")
-H:AddLabel("[+] Added Pray Auto Try Luck|5/7/2566|20:20")
-H:AddLabel("[+] Added Auto Elite Player|6/7/2566|20:16")
-H:AddLabel("[+] New Ui|11/7/2566|11:27")
-H:AddLabel("[+] Auto Drive Boat|17/7/2566|11:27")
-H:AddLabel("[+] Aimbot Nearest|19/7/2566|20:43")
-H:AddLabel("[+] Auto ArenaTrainer|21/7/2566|19:44")
-H:AddLabel("[+] Ui Ripple|25/7/2566|20:01")
-H:AddLabel("[+] Auto Sword Mas|29/7/2566|10:03")
-H:AddLabel("[+] Newui|1/8/2566|--:--")
-H:AddLabel("[+] Esp Mystic Island|1/8/2566|16:11")
-H:AddLabel("[+] Auto Sea Baest Fully|1/8/2566|16:11")
-H:AddLabel("[+] Esp Advanced Fruit Dealer|2/8/2566|14:46")
-H:AddLabel("[+] Fix Farm Chest Bypass|5/8/2566|13:19")
-H:AddLabel("[+] Fix Bypasstp|17/8/2566|16:59")
-H:AddLabel("[+] Tp Set Position|22/8/2566|20:50")
-H:AddLabel("[+] Bypass Teleport Player|22/8/2566|20:50")
-H:AddLabel("[+] Fix Auto Playyer Hunter|22/8/2566|20:50")
-H:AddLabel("[+] Teleport To Boat Select|22/8/2566|20:50")
-H:AddLabel("[+] Spectate Boat |22/8/2566|20:52")
-H:AddLabel("[+] Bring Boat |22/8/2566|20:52")
-H:AddLabel("[+] Farm Sky |27/8/2566|20:48")
-H:AddLabel("[+] Look Moon |28/8/2566|17:30")
-H:AddLabel("[+] Auto Farm Race V4 |2/9/2566|12:23")
-H:AddLabel("[+] Fix Auto Saber |2/9/2566|12:23")
-H:AddLabel("[+] UnEquipWeapon |2/9/2566|12:23")
-H:AddLabel("[+] Highlight Character|14/9/2566|12:23")
-H:AddLabel("[+] Fruit Notification|14/9/2566|12:23")
-H:AddLabel("[+] Level Farm Mode|15/9/2566|21:11")
-H:AddLabel("[+] Disabled Damage|19/9/2566|21:25")
-H:AddLabel("[-] Fix Disable Notification|19/9/2566|21:25")
-H:AddLabel("[+] Lock Mastery|19/9/2566|21:25")
-H:AddLabel("[+] Check Mon|21/9/2566|17:18")
-H:AddLabel("[x] Remove Check Mon|30/9/2566|10:29")
-H:AddLabel("[+] Bypass Tp Elite Hunter|30/9/2566|10:30")
-H:AddLabel("[+] Auto Cake Price Add Quest|30/9/2566|10:30")
-H:AddLabel("[+] Auto Farm Bone Add Quest|30/9/2566|10:30")
-H:AddLabel("[+] Bring Player|30/9/2566|10:30")
-H:AddLabel("[+] Check LegendSword|2/10/2566|22:44")
-H:AddLabel("[x] Fix Check HakiDealer (Show Colors Sell )|2/10/2566|22:44")
-H:AddLabel("[x] Add Farm MasFruitBone&Cake |3/10/2566|22:44")
-H:AddLabel("[x] Fix Kill Aura  |7/10/2566|20:10")
-H:AddLabel("[+] Farm Chect Mirage |12/10/2566|20:10")
-H:AddLabel("[+] Update Auto Farm Level|22/10/2566|12:09")
-H:AddLabel("[+] Fix Bring Boat|28/10/2566|00:34")
-H:AddLabel("[+] New Bypass Teleport|1/11/2566|15:55")
-H:AddLabel("[+] Farm Fish Crew Member|1/11/2566|15:55")
-H:AddLabel("[+] Fix Holy Torch|1/11/2566|15:55")
-H:AddLabel("[x] Fix Auto Sea Beast Fully|6/11/2566|20:57")
-H:AddLabel("[+] Bypass Tele Boss|6/11/2566|20:57")
-H:AddLabel("[+] Auto Find Full Moon|28/11/2566|16:30")
-H:AddLabel("[+] New Tween|11/12/2566|18:19")
-H:AddLabel("[+] New GUI|11/12/2566|18:19")
+
+H:AddLabel("วันเปิดสคริป|25/12/2566")
 
 
 
@@ -15952,19 +15851,4 @@ spawn(function()
         end
     end)
     end)
-
-print("Domadic Hub Load Complete")
-
-game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Domadic Hub", 
-      Text = "Welcome To Script!!";
-})
-wait(3)
-game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
-      Title = "Domadic Hub", 
-      Text = "made by @miidraayeerng อยาก Yed Owner Zps วะ";
-})
-
    
