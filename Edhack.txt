@@ -3807,6 +3807,25 @@ elseif _G.WhiteScreen == false then
         end    
     })
 
+ST:AddButton({
+    Name = "Delete Workspace",
+    Callback = function()
+          _G.Workspace = value
+      end    
+})
+
+      spawn(function()
+    pcall(function()
+        while wait() do
+            if _G.Workspace then
+                if isfolder("KNXBF") then
+                    delfolder("KNXBF")
+                end
+            end
+        end
+    end)
+end)
+
 local Section = IQ:AddSection({
     Name = "Saber Menu"
 })
