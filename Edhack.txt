@@ -7665,7 +7665,7 @@ spawn(function()
     pcall(function()
         while wait() do
             if _G.Farmfast and World1 then
-                if game.Players.LocalPlayer.Data.Level.Value >= 50 then
+                if game.Players.LocalPlayer.Data.Level.Value >= 300 then
                     Farmfasttoggle:Set(false)
                     _G.AutoPlayerHunter = true
                 end
