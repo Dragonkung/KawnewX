@@ -11435,7 +11435,7 @@ _G.Settings = {
         Destroy = true, -- Destroy Images
     },
     ["No Particles"] = false, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
-    ["No Camera Effects"] = false, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
     ["No Explosions"] = false, -- Makes Explosion's invisible
     ["No Clothes"] = false, -- Removes Clothing from the game
     ["Low Water Graphics"] = true, -- Removes Water Quality
