@@ -3826,6 +3826,24 @@ ST:AddButton({
     end)
 end)
 
+ST:AddToggle({
+        Name = "Delete notification text",
+        Default = false,
+        Callback = function(Value)
+            _G.alls = Value
+        end    
+    })
+    
+    spawn(function()
+	while wait() do
+		if _G.alls then
+			game.Players.LocalPlayer.PlayerGui.Notifications.Enabled = false
+		else
+			game.Players.LocalPlayer.PlayerGui.Notifications.Enabled = true
+		end
+	end
+end)
+
 local Section = IQ:AddSection({
     Name = "Saber Menu"
 })
