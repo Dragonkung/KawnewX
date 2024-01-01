@@ -11399,6 +11399,7 @@ OrionLib:MakeNotification({
     Time = 5
 })
 
+game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
 
 --FPS BOOST
 _G.Settings = {
