@@ -11445,3 +11445,6 @@ _G.Settings = {
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/Dragonkung/main/FPSBooster.lua"))()
 print("Boost Load!!")
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/request/source.lua"))()
