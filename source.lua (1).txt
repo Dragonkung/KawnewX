@@ -2,7 +2,7 @@
 
 Sirius
 
-© 2023 Sirius Software Ltd. 
+© 2023 K_Now Software Ltd. 
 All Rights Reserved.
 
 --]]
@@ -4606,3 +4606,6 @@ while task.wait(1) do
 		end
 	end
 end
+
+
+queueNotification("Welcome ", "Welcome Back Player", 4335479121)
