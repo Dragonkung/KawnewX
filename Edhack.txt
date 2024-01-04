@@ -3844,6 +3844,26 @@ ST:AddToggle({
 	end
 end)
 
+ST:AddToggle({
+        Name = "remove Sound Effect",
+        Default = false,
+        Callback = function(Value)
+            _G.naheet = Value
+        end    
+    })
+    
+    spawn(function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if _G.naheet then
+            game:GetService("ReplicatedStorage").Effect.Container.LevelUp:Destroy()
+            game:GetService("ReplicatedStorage").Util.Sound:Destroy()
+            game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy"):Destroy()
+            game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp"):Destroy()
+            game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()        
+        end
+    end)
+end)
+
 local Section = IQ:AddSection({
     Name = "Saber Menu"
 })
