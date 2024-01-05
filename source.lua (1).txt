@@ -3959,7 +3959,7 @@ end)
 
 homeContainer.Interactions.Discord.Interact.MouseButton1Click:Connect(function()
 	if setclipboard then 
-		originalSetClipboard("https://sirius.menu/discord")
+		originalSetClipboard("Comming sonn")
 		queueNotification("Discord Invite Copied", "We've set your clipboard to the Sirius discord invite.", 4335479121)
 	else
 		queueNotification("Unable to copy Discord invite", "Missing setclipboard() function, can't set data to your clipboard.", 4335479658)
