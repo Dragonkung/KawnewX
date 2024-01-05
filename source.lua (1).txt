@@ -35,6 +35,12 @@ Potential Future Setting Options
  - Block entire domain or just the specific page in the Sirius Intelligent Flow Interception. Do this on case by case, e.g blocked = {"link.com", true} - true being whether its the domain or not
  - Serverhop type (default/gta)
  - Hook Specific Functions to reduce the need for external scripts
+
+Quality 
+- Notifunction All
+- S
+
+-
  
 --]]
 
