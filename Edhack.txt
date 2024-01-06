@@ -11467,4 +11467,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonkung/Dragonkung
 print("Boost Load!!")
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/request/source.lua"))()
+
