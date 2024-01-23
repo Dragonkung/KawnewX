@@ -1,7 +1,4 @@
-require(game:GetService("ReplicatedStorage").Notification).new("Waiting For Optimized Fps"):Display();
-wait()
-setthreadcontext(0.2)
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Blackscreen.Size = UDim2.new(500, 0, 500, 500)
+
 _G.Settings = {
     Players = {
         ["Ignore Me"] = true, -- Ignore your Character
@@ -1772,11 +1769,11 @@ end
     elseif Distance < 250 then
         Speed = 600
     elseif Distance < 500 then
-        Speed = 400
+        Speed = 450
     elseif Distance < 750 then
-        Speed = 250
+        Speed = 370
     elseif Distance >= 1000 then
-        Speed = 200
+        Speed = 350
     end
     game:GetService("TweenService"):Create(
         game.Players.LocalPlayer.Character.HumanoidRootPart,
@@ -1796,11 +1793,11 @@ end
         elseif Distance < 250 then
             Speed = 600
         elseif Distance < 500 then
-            Speed = 300
+            Speed = 410
         elseif Distance < 750 then
-            Speed = 250
+            Speed = 400
         elseif Distance >= 1000 then
-            Speed = 200
+            Speed = 350
         end
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
@@ -1820,11 +1817,11 @@ end
         elseif Distance < 250 then
             Speed = 600
         elseif Distance < 500 then
-            Speed = 300
+            Speed = 460
         elseif Distance < 750 then
-            Speed = 250
+            Speed = 400
         elseif Distance >= 1000 then
-            Speed = 200
+            Speed = 350
         end
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
@@ -11467,20 +11464,6 @@ OrionLib:MakeNotification({
 })
 
 game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
-
---FPS BOOST
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Blackscreen.Size = UDim2.new(1, 0, 500, 500)
-
-require(game:GetService("ReplicatedStorage").Notification).new("<Color=Green>Everything is ready<Color=/>"):Display();
-wait()
-setthreadcontext(5)
-
-
-
-
-
-
-
 
 
 
